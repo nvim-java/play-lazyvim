@@ -28,3 +28,11 @@ devcontainer exec --workspace-folder . bash
 - Run `nvim` and wait for `Lazy` and `Mason` to install everything necessary
 - Relaunch Neovim
 - Go to one of the projects in the `java-projects` directory and play
+
+## Prepare Maven projects
+
+```shell
+mvn eclipse:clean eclipse:eclipse
+```
+
+[more info](https://github.com/nvim-java/nvim-java/wiki/Q-&-A#no_entry-lsp-doesnt-work-on-maven-projects)

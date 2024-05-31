@@ -16,7 +16,7 @@ Playground for you to try nvim-java
 - Clone the repository
 
 ```shell
-git clone https://github.com/nvim-java/starter-lazyvim.git
+git clone https://github.com/nvim-java/play-lazyvim.git
 ```
 
 - Change the directory to repository you just cloned

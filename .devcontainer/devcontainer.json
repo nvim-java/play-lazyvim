@@ -5,6 +5,7 @@
     "ghcr.io/s1n7ax/devcontainer-features/maven:2": {},
     "ghcr.io/s1n7ax/devcontainer-features/gradle:2": {},
     "ghcr.io/s1n7ax/devcontainer-features/neovim-essentials:2": {},
-    "ghcr.io/s1n7ax/devcontainer-features/neovim:2": {}
+    "ghcr.io/s1n7ax/devcontainer-features/neovim:2": {},
+    "ghcr.io/devcontainers/features/java:1": {}
   }
 }

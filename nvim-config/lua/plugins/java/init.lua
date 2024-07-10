@@ -7,13 +7,37 @@ return {
       opts = {
         servers = {
           jdtls = {
-            -- Your custom jdtls settings goes here
+            settings = {
+              java = {
+                configuration = {
+                  runtimes = {
+                    {
+                      name = "JavaSE-19",
+                      path = "/usr/local/sdkman/candidates/java/19-tem",
+                    },
+                    {
+                      name = "JavaSE-21",
+                      path = "/usr/local/sdkman/candidates/java/21.0.3-tem",
+                    },
+                  },
+                },
+              },
+            },
           },
         },
         setup = {
           jdtls = function()
             require("java").setup({
-              -- Your custom nvim-java configuration goes here
+              root_markers = {
+                "settings.gradle",
+                "settings.gradle.kts",
+                "pom.xml",
+                "build.gradle",
+                "mvnw",
+                "gradlew",
+                "build.gradle",
+                "build.gradle.kts",
+              },
             })
           end,
         },

@@ -12,12 +12,8 @@ return {
                 configuration = {
                   runtimes = {
                     {
-                      name = "JavaSE-19",
-                      path = "/usr/local/sdkman/candidates/java/19-tem",
-                    },
-                    {
-                      name = "JavaSE-21",
-                      path = "/usr/local/sdkman/candidates/java/21.0.3-tem",
+                      name = "JavaSE-23",
+                      path = "/usr/local/sdkman/candidates/java/23-tem",
                     },
                   },
                 },

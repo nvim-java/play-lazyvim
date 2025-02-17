@@ -1,6 +1,5 @@
 return {
   "nvim-java/nvim-java",
-  config = false,
   dependencies = {
     {
       "neovim/nvim-lspconfig",
@@ -13,7 +12,7 @@ return {
                   runtimes = {
                     {
                       name = "JavaSE-23",
-                      path = "/usr/local/sdkman/candidates/java/23-tem",
+                      path = "/usr/local/sdkman/candidates/java/current",
                     },
                   },
                 },
@@ -24,6 +23,9 @@ return {
         setup = {
           jdtls = function()
             require("java").setup({
+              jdk = {
+                auto_install = false,
+              },
               root_markers = {
                 "settings.gradle",
                 "settings.gradle.kts",

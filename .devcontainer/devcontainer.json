@@ -2,10 +2,15 @@
   "name": "Java Container",
   "image": "ubuntu:24.04",
   "features": {
-    "ghcr.io/s1n7ax/devcontainer-features/maven:2": {},
-    "ghcr.io/s1n7ax/devcontainer-features/gradle:2": {},
-    "ghcr.io/s1n7ax/devcontainer-features/neovim-essentials:2": {},
-    "ghcr.io/s1n7ax/devcontainer-features/neovim:2": {},
-    "ghcr.io/devcontainers/features/java:1": {}
+    "ghcr.io/devcontainers/features/java:1": {
+      "installGradle": true,
+      "gradleVersion": "8.12.1",
+      "installMaven": true,
+      "mavenVersion": "3.9.9"
+    },
+    "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
+      "packages": "git,wget,curl,ripgrep,python3,g++"
+    },
+    "ghcr.io/s1n7ax/devcontainer-features/neovim:2": {}
   }
 }
